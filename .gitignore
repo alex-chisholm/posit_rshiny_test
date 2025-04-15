@@ -1,0 +1,14 @@
+irr_out/
+ntt_out/
+logs/
+*.log
+*.pkl
+*.dcf
+.DS*
+.Rproj.user
+.Renviron
+.Rhistory
+.Rdata
+.Ruserdata
+.rds
+rsconnect/

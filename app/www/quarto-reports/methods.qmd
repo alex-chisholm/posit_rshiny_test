@@ -1,0 +1,29 @@
+---
+title: "Methods"
+subtitle: "Technical Report"
+author: "The Freshwater Trust, 2024"
+date: last-modified
+toc: true
+prefer-html: true
+#format-links: true
+format: 
+  html:
+    toc-expand: true
+    embed-resources: true
+    link-external-icon: true
+    link-external-newwindow: true
+  #docx: default
+  #pdf: default
+editor: source
+execute:
+  echo: false
+css: "styles_quarto.css"
+---
+
+```{r setup}
+#| output: false
+
+```
+
+
+

@@ -1,0 +1,12 @@
+*.py linguist-detectable=true 
+*.r linguist-detectable=true
+*.sql linguist-detectable=true
+*.sql linguist-language=SQL
+*.qmd linguist-language=R
+*.tpl linguist-language=Python
+*.js linguist-detectable=false
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
+*.java linguist-detectable=false
+*.html linguist-detectable=false  
+*.xml linguist-detectable=false

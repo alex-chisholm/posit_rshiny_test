@@ -1,0 +1,70 @@
+---
+title: "User Guide"
+subtitle: "Project Name"
+author: "The Freshwater Trust, 2024"
+date: last-modified
+toc: true
+prefer-html: true
+#format-links: true
+format: 
+  html:
+    toc-expand: 6
+    embed-resources: true
+    link-external-icon: true
+    link-external-newwindow: true
+  #docx: default
+  #pdf: default
+editor: source
+execute:
+  echo: false
+css: "styles_quarto.css"
+---
+
+```{r setup}
+#| output: false
+
+library(leaflet)
+# library(reshape2)
+# library(stringr)
+library(DBI)
+library(gt)
+library(dplyr)
+library(sf)
+library(plotly)
+
+# library(plyr)
+# library(dplyr)
+# library(stringr)
+# library(extrafont)
+# library(webr)
+# library(reticulate)
+# library(cowplot)
+# library(flextable)
+# library(reshape2)
+# library(dplyr)
+# library(ggplot2)
+# library(tidyverse)
+# library(RPostgreSQL)
+
+con <- dbConnect(
+  RPostgres::Postgres(),
+  dbname = "tonka", # Sys.getenv("dbname_tonka"),
+  host=Sys.getenv("host"),
+  port='5432',
+  user=Sys.getenv("user"),
+  password=Sys.getenv("password")
+  )
+
+# Define color palette
+allpal <- c("#232e3f","#9daec8","#5b78a4",
+         "#5791a7","#4d4d4d","#b3b3b3",  
+         "#944b23","#e2a583","#ce6931","#29150a",
+         "#46b9ad","#2a6f68", "#bce3df", "#93d2cb",
+         "#425535","#afc4a1","#7a9d62",
+         "#291e1b", "red")
+
+pal <- c(allpal[1], allpal[4], allpal[5], allpal[7], allpal[12], allpal[15],allpal[10], allpal[14])
+stackpal<- c(allpal[13], allpal[4], allpal[1])
+
+```
+

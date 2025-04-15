@@ -1,0 +1,229 @@
+
+/*@import url('https://fonts.google.com/specimen/Source+Sans+Pro?query=source+sans');
+@import url('https://fonts.google.com/specimen/Source+Serif+Pro?query=source+serif');*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+
+*{font-family: 'Source Sans Pro', sans-serif;}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	/*font-weight: bold;*/
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .1em;
+	line-height: 1.0;
+}
+
+.tab-content {
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* navbar */
+.navbar.navbar-default {
+    background-color: rgba(0, 21, 43, 0.2) !important;
+}
+
+.app-title {
+  font-size: 16px; 
+  font-weight: bold;
+}
+
+.app-footer {
+  text-align: center; 
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+/* start contact tab ------------------------------------- */
+#shiny-notification-contact-message-sent-success{
+  position: fixed;
+  top: 56px;
+  right: 30px;
+  width: 350px;
+  z-index: 99999;
+  background-color: #28b78d;
+  color: white;
+}
+
+#shiny-notification-contact-message-sent-error{
+  position: fixed;
+  top: 56px;
+  right: 30px;
+  width: 350px;
+  z-index: 99999;
+  color: white;
+}
+/* end  contact tab ------------------------------------- */
+
+
+/* start reports tab ------------------------------------- */
+
+.report-items {
+  font-size: 16px;
+  padding: 1px 0 1px 3px;
+}
+
+iframe {
+    display: block;       /* iframes are inline by default */
+    border: none;         /* Reset default border */
+    height: 80vh;        /* Viewport-relative units */
+}
+ 
+/* end reports tab ------------------------------------- */
+
+.map_plot_message {
+  font-weight: bold; 
+  font-size: 24px; 
+  padding-top:25vh; 
+  text-align: center; 
+}
+
+.map-button {
+  cursor: pointer;
+  background-color: rgba(35, 46, 63, 0.8);
+  color: white;
+  margin: 0;
+  padding: 10px;
+  margin: 0 15px 15px 15px
+}
+
+#descriptive_panel {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 131px;
+  left: 100px;
+  width: 311.6px;
+  z-index: 750;
+  padding: 10px 14px 10px 10px;
+}
+
+#top_dropdowns_and_btns {
+  position: absolute;
+  left: 80px;
+  top: 15px;
+  z-index: 750;
+  font-size: 14px;
+}
+
+#base_map_dropdown {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px !important;
+  border-radius: 5px;
+  border: 1px #ced4da solid;
+  height: 47px;
+}
+
+#map_btns {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  z-index: 1050;
+  transform: translate(-50%, -50%);
+}
+
+
+#loading-indicator-map,#loading-indicator-table  {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  z-index: 2000;
+  transform: translate(-50%, -50%);
+  background-color: #e1e2e3; 
+  border-color: #e1e2e3;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+
+.shinysky-busy-indicator {
+  background: #e1e2e3 !important;
+  padding: 20px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  height: ;
+}
+
+
+iframe body { overflow:hidden; }
+
+.form-check-input:checked, .shiny-input-container .checkbox input:checked, .shiny-input-container .checkbox-inline input:checked, .shiny-input-container .radio input:checked, .shiny-input-container .radio-inline input:checked {
+  background-color: #0C8416;
+  border-color: #0C8416;
+}
+
+#shiny-notification-layer-error {
+  position: fixed;
+  top: 200px;
+  left: 100px;
+  width: 350px;
+  z-index: 99999;
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .nav-tabs>li>a.active, 
+.nav-pills>li>a.active, 
+.nav-pills ul.nav.navbar-nav>li>a.active, 
+.nav-pills .show>.nav-link,
+.nav-pills .in>.nav-link,
+.nav-pills .nav-tabs>li.show>a,
+.nav-pills .nav-tabs>li.in>a, 
+.nav-pills>li.show>a, 
+.nav-pills>li.in>a,
+.nav-pills ul.nav.navbar-nav>li.show>a,
+.nav-pills ul.nav.navbar-nav>li.in>a{
+  background-color: #198754;
+}
+
+.nav-link, .nav-tabs>li>a, .nav-pills>li>a, ul.nav.navbar-nav>li>a {
+  color: #212529;
+}
+
+.nav-link, .nav-tabs>li>a:hover, .nav-pills>li>a:hover, ul.nav.navbar-nav>li>a:hover {
+  color: #198754;
+}
+
+.navbar-nav.nav-link.active, ul.nav.navbar-nav>li>a.active {
+  color: #212529;
+  font-weight: bold;
+}
+
+
+/* SETTINGS PANEL */
+
+#show_settings_panel_btn {
+  /*position: absolute;
+  left: 80px;
+  top: 95px;
+  z-index: 750;*/
+  background-color: rgba(35, 46, 63, 1);
+  color: white;
+  padding: 5px !important;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px #ced4da solid;
+  height: 35px;
+}
+
+
+.shiny-input-checkboxgroup .checkbox-inline, .shiny-input-radiogroup .radio-inline {
+  padding-right: 5px;
+}
+
+::backdrop
+{
+    background-color: white;
+}
+

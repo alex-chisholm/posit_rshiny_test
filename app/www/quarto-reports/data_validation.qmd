@@ -1,0 +1,64 @@
+---
+title: "Data Validation"
+subtitle: "Range and Consistency Checks"
+author: "The Freshwater Trust, 2024"
+date: last-modified
+toc: true
+prefer-html: true
+#format-links: true
+format: 
+  html:
+    toc-expand: true
+    embed-resources: true
+    link-external-icon: true
+    link-external-newwindow: true
+  #docx: default
+  #pdf: default
+editor: source
+execute:
+  echo: false
+css: "styles_quarto.css"
+---
+
+```{r setup}
+#| output: false
+
+library(leaflet)
+library(DBI)
+library(gt)
+library(dplyr)
+library(sf)
+library(highcharter)
+library(plotly)
+library(cowplot)
+library(stringr)
+library(ggplot2)
+
+con <- dbConnect(
+  RPostgres::Postgres(),
+  dbname = Sys.getenv("dbname"),
+  host=Sys.getenv("host"),
+  port='5432',
+  user=Sys.getenv("user"),
+  password=Sys.getenv("password")
+)
+
+# Define color palette
+allpal <- c("#232e3f","#9daec8","#5b78a4",
+            "#5791a7","#4d4d4d","#b3b3b3",  
+            "#944b23","#e2a583","#ce6931",
+            "#29150a","#46b9ad","#2a6f68", 
+            "#bce3df", "#93d2cb","#425535",
+            "#afc4a1","#7a9d62","#291e1b", "red")
+
+pal <- c(allpal[1], allpal[4], allpal[5], allpal[7], allpal[12], allpal[15],allpal[10], allpal[14])
+stackpal<- c(allpal[13], allpal[4], allpal[1])
+wetlandpal<-c(allpal[1], allpal[4],allpal[17], allpal[16], allpal[5])
+
+conpal = c(allpal[4], allpal[7], allpal[15], allpal[1])
+
+quarpal<-c("#425535", "#ce6931", "#2a6f68", "#4d4d4d")
+
+```
+
+
