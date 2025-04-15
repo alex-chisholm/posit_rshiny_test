@@ -5630,10 +5630,13 @@
       "checksum": "d41d8cd98f00b204e9800998ecf8427e"
     },
     ".Renviron": {
-      "checksum": "fe468cb80525e8def4a159c1f3d45a19"
+      "checksum": "41f310392e41d58e23e82d21ec085869"
     },
     ".Rprofile": {
-      "checksum": "15b38f6e3637be550af8d4ebbe24e09a"
+      "checksum": "666643669e24b1411af412afc6fe6335"
+    },
+    "app.R": {
+      "checksum": "f8b98951cd984d14917ebab169ccf954"
     },
     "functions/addLegendCustom.R": {
       "checksum": "7b3e1d27db7ae2dd4d2e35802abfdb6b"
@@ -5797,20 +5800,11 @@
     "R/ui_tabular_data.R": {
       "checksum": "e6550994a0c0628f3ffa6da0354131f1"
     },
-    "README.html": {
-      "checksum": "c94da4813a0dc7efbdcc6bf910b3870a"
-    },
-    "README.md": {
-      "checksum": "574eab5f8db0ef397f2bacf2349e6aec"
-    },
     "renv.lock": {
       "checksum": "137c30e16e43d33173ab4d476824fd7e"
     },
     "server.R": {
       "checksum": "e1526a6f50f1a60202110ab271c04556"
-    },
-    "shiny-run.R": {
-      "checksum": "e27a353e7ae40317ec92b8828f4700c3"
     },
     "ui.R": {
       "checksum": "3f511547edac02c514b6a53df15e02b8"
